@@ -1,0 +1,109 @@
+{
+  "carrello": [],
+  "eventi": [
+    {
+      "id": 1,
+      "title": "Festa della Birra Artigianale",
+      "city": "Vercelli",
+      "date": "15/01/2023",
+      "finish": "Passato",
+      "description": "Alle ore 11,00 apertura degli stand gastronomici con Street Food e possibilità d’asporto, dalle 12,30 possibilità di pranzare con servizio ai tavoli.",
+      "image": "https://www.enotecavinoinanfora.it/wp-content/uploads/2021/07/Birra-ad-Imballo-300x300.png"
+    },
+    {
+      "id": 2,
+      "title": "Festa di Primavera – L’Asparago",
+      "city": "Cambiano",
+      "date": "10/02/2023",
+      "finish": "Passato",
+      "description": "Alle ore 11,00 apertura degli stand gastronomici con Street Food e possibilità d’asporto, dalle 12,30 possibilità di pranzare con servizio ai tavoli.",
+      "image": "https://i0.wp.com/plants-pro.com/wp-content/uploads/2019/04/ASPERGE-CONV.jpg?fit=300%2C300&ssl=1"
+    },
+    {
+      "id": 3,
+      "title": "Torino Assaggi di Francia",
+      "city": "Torino",
+      "date": "21/04/2023",
+      "finish": "Passato",
+      "description": "Alle ore 11,00 apertura degli stand gastronomici con Street Food e possibilità d’asporto, dalle 12,30 possibilità di pranzare con servizio ai tavoli.",
+      "image": "https://www.fondazioneslowfood.com/wp-content/uploads/2019/09/camembert_740x740-300x300.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Fiera del Pisello",
+      "city": "Casalborgone",
+      "date": "26/05/2023",
+      "finish": "Da svolgersi",
+      "description": "Alle ore 11,00 apertura degli stand gastronomici con Street Food e possibilità d’asporto, dalle 12,30 possibilità di pranzare con servizio ai tavoli.",
+      "image": "https://www.portaledelverde.it/upload/anteprime/blog/post/img/300x300c/20160901121937-come-coltivare-curare-piselli.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Sagra della Fritüra Dusa",
+      "city": "Torino",
+      "date": "30/07/2023",
+      "finish": "Da svolgersi",
+      "description": "Alle ore 11,00 apertura degli stand gastronomici con Street Food e possibilità d’asporto, dalle 12,30 possibilità di pranzare con servizio ai tavoli.",
+      "image": "https://www.foxvalleyfoodie.com/wp-content/uploads/2021/05/fried-chicken-gizzards-recipe-300x300.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Anciue: Fiera degli Acciugai",
+      "city": "Cuneo",
+      "date": "21/12/2023",
+      "finish": "Da svolgersi",
+      "description": "Alle ore 11,00 apertura degli stand gastronomici con Street Food e possibilità d’asporto, dalle 12,30 possibilità di pranzare con servizio ai tavoli.",
+      "image": "https://www.xbarfollonica.it/wp-content/uploads/2017/10/acciughe-fritte-300x300.jpg"
+    }
+  ],
+  "prodotti": [
+    {
+      "id": 1,
+      "title": "Foto No.1",
+      "price": 109.95,
+      "description": "Fotografia fine art di piatto gourmet realizzato in occasione di uno dei nostri eventi",
+      "category": "men's clothing",
+      "image": "https://cdn.shopify.com/s/files/1/0372/3653/9529/articles/Indian_Food_and_Wine_matching_400_400.png?v=1638871561"
+    },
+    {
+      "id": 2,
+      "title": "Foto No.2",
+      "price": 22.35,
+      "description": "Fotografia fine art di piatto gourmet realizzato in occasione di uno dei nostri eventi",
+      "category": "men's clothing",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/113777-0b21d44.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Foto No.3",
+      "price": 55.99,
+      "description": "Fotografia fine art di piatto gourmet realizzato in occasione di uno dei nostri eventi",
+      "category": "men's clothing",
+      "image": "https://i.pinimg.com/474x/fb/d5/65/fbd565ca262abe6d7c89b1e19a318243.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Foto No.4",
+      "price": 15.99,
+      "description": "Fotografia fine art di piatto gourmet realizzato in occasione di uno dei nostri eventi",
+      "category": "men's clothing",
+      "image": "https://it.julskitchen.com/wp-content/uploads/sites/3/2012/03/insalata-primaverile-1-500x500.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Foto No.5",
+      "price": 695,
+      "description": "Fotografia fine art di piatto gourmet realizzato in occasione di uno dei nostri eventi",
+      "category": "jewelery",
+      "image": "https://www.tamingtwins.com/wp-content/uploads/2021/06/cream-cheese-pasta-recipe-2-500x500.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Foto No.6",
+      "price": 168,
+      "description": "Fotografia fine art di piatto gourmet realizzato in occasione di uno dei nostri eventi",
+      "category": "jewelery",
+      "image": "https://www.wbcsd.org/var/site/storage/images/programs/food-and-nature/food-land-use/fresh/60850-138-eng-GB/FReSH_720_square.jpg"
+    }
+  ]
+}

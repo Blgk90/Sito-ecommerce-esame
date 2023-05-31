@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <style>
+   h1,h2,h3
+    {
+      color:rgba(169,1,1,255);
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg mb-3">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" style="height:4rem"></a>
+          <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent"
+                          aria-controls="navbarSupportedContent"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- imposto margine a sinistra automatico per spostare a destra il menu -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="eventi.html">EVENTI</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="about.html">CHI SIAMO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="contatti.html">CONTATTI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">PRODOTTI</a>
+              </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cart.html"><i class="bi bi-cart"></i><span class="badge bg-primary text-light mx-2"></span></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+    
+    
+    
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <!-- COLONNA DI SINISTRA DOVE APPAIONO I PRODOTTI -->
+        <div class="col-md-7" style="min-height: 50vh;">
+          <h2>Il tuo carrello :</h2>
+          <div class="MainProd">
+
+          </div>
+        </div>
+
+
+        <!-- COLONNA DI DESTRA DOVE APPARE IL NUMERO DI OGGETTI E IL TOTALE -->
+        <div class="SideRecap col-md-4 ">
+          <h2>Riepilogo ordini</h2>
+
+          <div class="SideRecap border p-3 pt-5 rounded d-flex justify-content-between flex-column mb-3">
+            <div class="row p-2">
+              <div class="col-8 itemsNumTxt"><h5>Numero Oggetti:</h5></div>
+              <div class="col-4 itemsNumNum"></div>
+            </div>
+            <div class="row p-2">
+              <div class="col-8 itemsTot"><h4>Totale :</h4></div>
+              <div class="col-4 itemsTotPrice"></div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary mb-3 d-none" id="checkoutBtn">Checkout</button>
+          <button class="btn btn-danger mb-3 mx-3 d-none" id="deleteAll">Svuota carrello</button>
+
+
+          <!-- FORM -->
+
+
+          <form action="typage.html" class="d-none my-3" id="checkoutForm" >
+            <h2>Checkout</h2>
+            <div class="form-row">
+              <div class="form-group ">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="mennillo@imgnlavoro.it" required>
+              </div>
+              <div class="form-group ">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Indirizzo</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="es. via Carlo Alberto, 22/a" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group ">
+                <label for="inputCity">Città</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="es. Torino" required>
+              </div>
+              <div class="form-group ">
+                <label for="inputState">Nazione</label>
+                <select id="inputState" class="form-control" required>
+                  <option selected value="">----</option>
+                  <option value="ita" >Italia</option>
+                  <option value="eur">Europa</option>
+                  <option value="exUe">Extra UE</option>
+                </select>
+              </div>
+              <div class="form-group  ">
+                <label for="inputZip">Cap</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="es. 10125" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group ">
+                <label for="inputCity">Carta di credito</label>
+                <input type="text" class="form-control" id="inputVisa" placeholder="N. 123456" required>
+              </div>
+            <div class="form-group">
+              <div class="form-check my-2">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                  Ho letto l'informativa sulla Privacy
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitForm">Conferma Dati</button>
+          </form>
+
+          <!-- FORM -->
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+  </main>
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted mt-5  "  >
+
+  <!-- Section: Links  -->
+  <section  style="background-color: rgba(0, 0, 0, 0.025);" class="p-1" >
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Mangiare bene in piemonte © 
+          </h6>
+          <p>
+            "Il buon cibo è il fondamento della vera felicità"
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Pagine
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="eventi.html" class="text-reset">Eventi</a>
+          </p>
+          <p>
+            <a href="about.html" class="text-reset">Chi siamo</a>
+          </p>
+          <p>
+            <a href="contatti.html" class="text-reset">Contatti</a>
+          </p>
+          <p>
+            <a href="products.html" class="text-reset">Prodotti</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contatti</h6>
+          <p> Località Solito 2, 15030 Treville (AL)</p>
+          <p>
+            
+            info@mbpiemonte.com
+          </p>
+          <p>+39 339 3366887</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.044);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://filippoaimo.com/">Filippo Aimo</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <script src="./js/cartbeta2.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
+
+
+
